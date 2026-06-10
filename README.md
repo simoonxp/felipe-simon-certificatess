@@ -4,6 +4,10 @@ Bem-vindo ao meu repositório de certificações!
 
 Este espaço foi criado para organizar e compartilhar os certificados que conquistei ao longo da minha jornada de aprendizado em tecnologia, desenvolvimento de software, banco de dados e análise de dados.
 
+## 🤖 Projeto Experimental com IA
+
+Parte dos arquivos e da organização deste repositório foram desenvolvidos com o auxílio de Inteligência Artificial (IA), com o objetivo de testar processos de automação, geração de documentação e otimização de fluxos de trabalho relacionados à organização de certificados e portfólios digitais.
+
 ## 🎯 Objetivo
 
 Manter um registro público das minhas certificações, demonstrando meu compromisso com o aprendizado contínuo e a evolução profissional na área de tecnologia.
