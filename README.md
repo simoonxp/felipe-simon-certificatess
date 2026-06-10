@@ -14,11 +14,9 @@ Meu nome é **Felipe Simon** e sou estudante de **Big Data para Negócios na FAT
 
 Tenho interesse em áreas como:
 
-- 💾 Banco de Dados (SQL e Oracle)
+- 💾 Banco de Dados SQL
 - 📊 Big Data e Análise de Dados
 - 🐍 Programação com Python
-- ☕ Desenvolvimento Java
-- 🌐 Desenvolvimento Web
 - 🔧 Git e GitHub
 
 ## 🏆 Certificações
@@ -32,13 +30,4 @@ Neste repositório você encontrará certificados relacionados a:
 - Tecnologia e Inovação
 - Cursos Complementares
 
-## 📂 Estrutura
 
-```text
-📁 Certificados
- ├── SQL
- ├── Python
- ├── Java
- ├── Git e GitHub
- ├── Desenvolvimento Web
- └── Outros
