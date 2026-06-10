@@ -5,6 +5,7 @@ export interface Certificate {
   issueDate: string;
   credentialId?: string;
   credentialUrl?: string;
+  certificateImage?: string;
   category: 'programming' | 'design' | 'business' | 'data' | 'ai' | 'other';
 }
 
@@ -15,6 +16,7 @@ export const certificatesData: Certificate[] = [
     issuer: 'FIAP',
     issueDate: 'maio de 2026',
     credentialId: 'CA31608C83C1BB79FB35CACB06ABA833',
+    certificateImage: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663248944928/JtTPXPMpFPQz5xuArgdLag/certificate-bigdata-analytics-VDYkXpSUyHoXdn38ek7AiN.webp',
     category: 'data',
   },
   {
@@ -22,6 +24,7 @@ export const certificatesData: Certificate[] = [
     title: 'Comece a Criar com o Power BI',
     issuer: 'Microsoft Learning',
     issueDate: 'maio de 2026',
+    certificateImage: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663248944928/JtTPXPMpFPQz5xuArgdLag/certificate-powerbi-create-QWcQjrDJBBM2sHK3npzJiM.webp',
     category: 'data',
   },
   {
@@ -29,6 +32,7 @@ export const certificatesData: Certificate[] = [
     title: 'Descobrir a Análise de Dados',
     issuer: 'Microsoft Learning',
     issueDate: 'maio de 2026',
+    certificateImage: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663248944928/JtTPXPMpFPQz5xuArgdLag/certificate-data-analysis-6oVdok2rnCyi2vbT6kKTmi.webp',
     category: 'data',
   },
   {
@@ -36,6 +40,7 @@ export const certificatesData: Certificate[] = [
     title: 'Projetar Relatórios do Power BI',
     issuer: 'Microsoft Learning',
     issueDate: 'maio de 2026',
+    certificateImage: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663248944928/JtTPXPMpFPQz5xuArgdLag/certificate-powerbi-reports-NL3G3EAFWnB84rwYCbY8ve.webp',
     category: 'data',
   },
   {
