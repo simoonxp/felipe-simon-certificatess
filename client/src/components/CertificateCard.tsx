@@ -6,21 +6,21 @@ interface CertificateCardProps {
 }
 
 const categoryColors: Record<string, string> = {
-  programming: 'bg-blue-50 border-blue-200',
-  design: 'bg-purple-50 border-purple-200',
-  business: 'bg-emerald-50 border-emerald-200',
-  data: 'bg-orange-50 border-orange-200',
-  ai: 'bg-pink-50 border-pink-200',
-  other: 'bg-gray-50 border-gray-200',
+  programming: 'bg-blue-950 border-blue-800',
+  design: 'bg-purple-950 border-purple-800',
+  business: 'bg-emerald-950 border-emerald-800',
+  data: 'bg-orange-950 border-orange-800',
+  ai: 'bg-pink-950 border-pink-800',
+  other: 'bg-gray-800 border-gray-700',
 };
 
 const categoryBadgeColors: Record<string, string> = {
-  programming: 'bg-blue-100 text-blue-700',
-  design: 'bg-purple-100 text-purple-700',
-  business: 'bg-emerald-100 text-emerald-700',
-  data: 'bg-orange-100 text-orange-700',
-  ai: 'bg-pink-100 text-pink-700',
-  other: 'bg-gray-100 text-gray-700',
+  programming: 'bg-blue-900 text-blue-300',
+  design: 'bg-purple-900 text-purple-300',
+  business: 'bg-emerald-900 text-emerald-300',
+  data: 'bg-orange-900 text-orange-300',
+  ai: 'bg-pink-900 text-pink-300',
+  other: 'bg-gray-700 text-gray-300',
 };
 
 const categoryLabels: Record<string, string> = {
@@ -54,37 +54,37 @@ export default function CertificateCard({ certificate }: CertificateCardProps) {
           </span>
         </div>
 
-        {/* Título */}
-        <h3 className="text-lg font-bold text-gray-900 mb-3 line-clamp-2 group-hover:text-blue-700 transition-colors">
-          {certificate.title}
-        </h3>
+      {/* Título */}
+      <h3 className="text-lg font-bold text-white mb-3 line-clamp-2 group-hover:text-blue-300 transition-colors">
+        {certificate.title}
+      </h3>
 
-        {/* Informações */}
-        <div className="space-y-2 text-sm text-gray-700">
+      {/* Informações */}
+      <div className="space-y-2 text-sm text-gray-300">
           {/* Emissor */}
           <div className="flex items-center gap-2">
-            <Building2 size={16} className="text-blue-600 flex-shrink-0" />
+            <Building2 size={16} className="text-blue-400 flex-shrink-0" />
             <span className="font-medium">{certificate.issuer}</span>
           </div>
 
           {/* Data */}
           <div className="flex items-center gap-2">
-            <Calendar size={16} className="text-blue-600 flex-shrink-0" />
+            <Calendar size={16} className="text-blue-400 flex-shrink-0" />
             <span>{certificate.issueDate}</span>
           </div>
 
           {/* ID da credencial */}
           {certificate.credentialId && (
-            <div className="flex items-center gap-2 pt-2 border-t border-gray-300">
-              <Hash size={16} className="text-blue-600 flex-shrink-0" />
-              <span className="font-mono text-xs text-gray-600">{certificate.credentialId}</span>
+            <div className="flex items-center gap-2 pt-2 border-t border-gray-700">
+              <Hash size={16} className="text-blue-400 flex-shrink-0" />
+              <span className="font-mono text-xs text-gray-400">{certificate.credentialId}</span>
             </div>
           )}
         </div>
       </div>
 
       {/* Efeito hover - linha animada na base */}
-      <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+      <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-blue-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
     </div>
   );
 }

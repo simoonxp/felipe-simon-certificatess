@@ -3,16 +3,13 @@ import { certificatesData, type Certificate } from '@/data/certificates';
 import CertificateCard from '@/components/CertificateCard';
 import { Button } from '@/components/ui/button';
 
-type FilterCategory = 'all' | 'programming' | 'design' | 'business' | 'data' | 'ai' | 'other';
+type FilterCategory = 'all' | 'programming' | 'data' | 'ai';
 
 const filterLabels: Record<FilterCategory, string> = {
   all: 'Todos',
   programming: 'Programação',
-  design: 'Design',
-  business: 'Negócios',
   data: 'Dados',
   ai: 'I.A.',
-  other: 'Outros',
 };
 
 export default function Home() {
@@ -26,7 +23,7 @@ export default function Home() {
   }, [activeFilter]);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gray-950 text-white">
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div
@@ -38,14 +35,14 @@ export default function Home() {
         />
         <div className="relative z-10 container mx-auto px-4 py-20 sm:py-28">
           <div className="max-w-3xl">
-            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-              Certificados de <span className="text-blue-600">Felipe Simon</span>
+            <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">
+              Certificados de <span className="text-blue-400">Felipe Simon</span>
             </h1>
-            <p className="text-lg text-gray-700 mb-8">
-              Explore minha jornada de aprendizado contínuo através de certificações em programação, análise de dados, inteligência artificial e muito mais.
+            <p className="text-lg text-gray-300 mb-8">
+              Explore minha jornada de aprendizado contínuo através de certificações em programação, análise de dados e inteligência artificial.
             </p>
-            <div className="flex items-center gap-2 text-sm text-gray-600">
-              <div className="w-2 h-2 rounded-full bg-blue-600" />
+            <div className="flex items-center gap-2 text-sm text-gray-400">
+              <div className="w-2 h-2 rounded-full bg-blue-400" />
               <span>{certificatesData.length} certificados</span>
             </div>
           </div>
@@ -75,7 +72,7 @@ export default function Home() {
               className={`transition-all duration-200 ${
                 activeFilter === category
                   ? 'bg-blue-600 text-white hover:bg-blue-700'
-                  : 'text-gray-700 hover:border-blue-600'
+                  : 'text-gray-300 hover:border-blue-400 border-gray-700'
               }`}
             >
               {filterLabels[category]}
@@ -102,14 +99,14 @@ export default function Home() {
           </div>
         ) : (
           <div className="text-center py-12">
-            <p className="text-gray-500 text-lg">Nenhum certificado encontrado nesta categoria.</p>
+            <p className="text-gray-400 text-lg">Nenhum certificado encontrado nesta categoria.</p>
           </div>
         )}
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-gray-200 bg-gray-50">
-        <div className="container mx-auto px-4 py-8 text-center text-gray-600 text-sm">
+      <footer className="border-t border-gray-800 bg-gray-900">
+        <div className="container mx-auto px-4 py-8 text-center text-gray-400 text-sm">
           <p>© 2026 Felipe Simon. Todos os certificados verificáveis através de seus respectivos emissores.</p>
         </div>
       </footer>
