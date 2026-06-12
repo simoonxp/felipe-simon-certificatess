@@ -48,6 +48,7 @@ export const certificatesData: Certificate[] = [
     title: 'Desenvolvimento de Sistemas',
     issuer: 'Governo do Estado de São Paulo',
     issueDate: 'abril de 2026',
+    certificateImage: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663248944928/JtTPXPMpFPQz5xuArgdLag/certificate-desenvolvimento-sistemas-8kL9mN2pQrS5tUvWxYzAbC.webp',
     category: 'programming',
   },
   {
@@ -56,6 +57,7 @@ export const certificatesData: Certificate[] = [
     issuer: 'Curso em Vídeo',
     issueDate: 'março de 2026',
     credentialId: '144F42-66E2-3',
+    certificateImage: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663248944928/JtTPXPMpFPQz5xuArgdLag/certificate-python3-mundo1-DeFgHiJkLmNoPqRsTuVwXyZ.webp',
     category: 'programming',
   },
   {
@@ -63,6 +65,7 @@ export const certificatesData: Certificate[] = [
     title: 'The Hour of A.I.',
     issuer: 'CodeAI',
     issueDate: 'fevereiro de 2026',
+    certificateImage: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663248944928/JtTPXPMpFPQz5xuArgdLag/certificate-hour-ai-AbCdEfGhIjKlMnOpQrStUvW.webp',
     category: 'ai',
   },
 ];
